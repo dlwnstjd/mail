@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>메일작성</title>
+</head>
+<body>
+<h2>메일 보내기</h2><hr>
+<form name="form1" method="post" action="mailsend.jsp">
+	<table border="1" style="border-collapse: collapse;">
+		<tr><td>보내는사람</td><td><input type="text" name="sendid"
+					value="spqj4896@naver.com"></td></tr>
+		<tr><td>비밀번호</td>
+			<td><input type="password" name="sendpw"></td></tr>
+		<tr><td>받는사람</td>
+			<td><input type="text" name="recipient" value="수신자 메일 주소"></td></tr>
+		<tr><td>제 목</td><td><input type="text" name="title"></td></tr>
+		<tr><td>메시지 형식</td>
+			<td><select name=mtype><!-- mime type: 문서 형식 표현 방식 -->
+				<option value="text/html;charset=euc-kr">HTML
+				<option value="text/plain;charset=euc-kr">TEXT
+			</select></td>
+		</tr><tr>
+		<td colspan=2><textarea name=contents cols=40 rows=10></textarea></td>
+		</tr><tr>
+		<td colspan=2 align=center><input type=submit value=전송></td></tr>
+	</table>
+</form>
+</body>
+</html>
